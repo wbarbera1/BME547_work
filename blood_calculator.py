@@ -15,6 +15,12 @@ def accept_input(test_name):
     return int(entry)
 
 
+def print_result(test_name, test_value, test_class)
+    out_string = "The test value of {} for {} is {}.".format(test_value, test_name, test_class)
+    print(out_string)
+    return
+
+
 def check_HDL(HDL_val)
     if HDL_val >= 60
         answer = "Normal"
@@ -24,5 +30,11 @@ def check_HDL(HDL_val)
         answer = "Low"
     return answer
     
-
+  
+def HDL_driver():
+    HDL_val = accept_input("HDL")
+    classification = check_HDL(HDL_val)
+    print_result("HDL", HDL_value, classification)
+    
+ 
 interface()
