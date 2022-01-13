@@ -23,13 +23,23 @@ def accept_input(test_name):
     return int(entry)
 
 
-def check_HDL(HDL_val):
-    if HDL_val >= 60:
-        answer = "Normal"
-    elif 60 > HDL_val >= 40:
-        answer = "Borderline Low"
-    else:
-        answer = "Low"
+def check_HDL(test_name, HDL_val):
+    if test_name == "HDL"
+        if HDL_val >= 60:
+            answer = "Normal"
+        elif 60 > HDL_val >= 40:
+            answer = "Borderline Low"
+        else:
+            answer = "Low"
+    elif test_name == "LDL":
+        if HDL_val < 130:
+            answer = "Normal"
+        elif 159 > HDL_val >= 130:
+            answer = "Borderline High"
+        elif 189 > HDL_val >= 160:
+            answer = "High"
+        else:
+            answer = "Very High"
     return answer
 
 
