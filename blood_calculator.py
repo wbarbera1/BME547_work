@@ -11,7 +11,7 @@ def interface():
             choice = "HDL"
             HDL_driver(choice)
         elif choice == "2":
-            choice == "LDL"
+            choice = "LDL"
             HDL_driver(choice)
         elif choice == "9":
             keep_running = False
@@ -24,7 +24,7 @@ def accept_input(test_name):
 
 
 def check_HDL(test_name, HDL_val):
-    if test_name == "HDL"
+    if test_name == "HDL":
         if HDL_val >= 60:
             answer = "Normal"
         elif 60 > HDL_val >= 40:
@@ -51,7 +51,7 @@ def print_result(test_name, test_value, test_class):
   
 def HDL_driver(test_selection):
     HDL_val = accept_input(test_selection)
-    classification = check_HDL(HDL_val)
+    classification = check_HDL(test_selection, HDL_val)
     print_result(test_selection, HDL_val, classification)
     
  
