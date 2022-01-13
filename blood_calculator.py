@@ -10,6 +10,7 @@ def interface():
             choice = "HDL"
         elif choice == "9":
             keep_running = False
+        HDL_driver(choice)
     return
 
 
@@ -35,9 +36,9 @@ def print_result(test_name, test_value, test_class)
     
   
 def HDL_driver(test_selection):
-    HDL_val = accept_input("HDL")
+    HDL_val = accept_input(test_selection)
     classification = check_HDL(HDL_val)
-    print_result("HDL", HDL_value, classification)
+    print_result(test_selection, HDL_value, classification)
     
  
 interface()
