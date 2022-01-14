@@ -46,6 +46,13 @@ def check_HDL(test_name, HDL_val):
             answer = "High"
         else:
             answer = "Very High"
+    elif test_name == "Total Cholesterol":
+        if HDL_val < 200:
+            answer = "Normal"
+        elif 239 > HDL_val >= 200:
+            answer = "Borderline High"
+        else:
+            answer = "High"
     return answer
 
 
