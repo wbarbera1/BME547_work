@@ -3,9 +3,10 @@ def interface():
     keep_running = True
     while keep_running:
         print("Options:")
-        print("1-HDL")
-        print("2-LDL")
-        print("9-Quit")
+        print("1 - HDL")
+        print("2 - LDL")
+        print("3 - Total")
+        print("9 - Quit")
         choice = input("Enter your choice: ")
         if choice == "1":
             choice = "HDL"
@@ -13,8 +14,13 @@ def interface():
         elif choice == "2":
             choice = "LDL"
             HDL_driver(choice)
+        elif choice == "3":
+            choice = "Total Cholesterol"
+            HDL_driver(choice)
         elif choice == "9":
             keep_running = False
+        else:
+            print("ERROR: Input a number corresponding to a presented test option")
     return
 
 
