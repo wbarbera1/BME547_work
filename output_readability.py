@@ -1,3 +1,5 @@
+# Output readability for strings
+
 weight = 20 / 2.205
 dosage = weight * 30
 
