@@ -1,7 +1,4 @@
 __pycache__
-README.md.bak
-blood_calculator.py.bak
-dosing.py.bak
-database.py.bak
-functions.py.bak
-test_blood_calculator.py.bak
+venv/
+*.bak
+
