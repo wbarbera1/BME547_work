@@ -7,7 +7,9 @@ def calculate_value():
     y_coord2 = int(input("Y2: "))
     x_val = int(input("Enter an x-value: "))
     coord1, coord2 = input_coordinates(x_coord1, x_coord2, y_coord1, y_coord2)
-    y_value = y_coord_out(coord1, coord2, x_val)
+    slope = calc_slope(coord1, coord2)
+    interc = calc_intercept(coord1, coord2, slope)
+    y_value = y_coord_out(slope, interc, x_val)
     print("Corresponding y_value = {}".format(y_value))
 
 def input_coordinates(x_coord1, x_coord2, y_coord1, y_coord2):
@@ -23,9 +25,7 @@ def calc_intercept(coord1, coord2, slope):
     interc = coord1[1] - slope*coord1[0]
     return interc
 
-def y_coord_out(coord1, coord2, x_val):
-    slope = calc_slope(coord1, coord2)
-    interc = calc_intercept(coord1, coord2, slope)
+def y_coord_out(slope, interc, x_val):
     y_value = slope*x_val + interc
     return y_value
 
